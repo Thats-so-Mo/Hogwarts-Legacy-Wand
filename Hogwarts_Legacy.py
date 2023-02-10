@@ -67,11 +67,11 @@ class GestureWand(Wand):
             print("{}: {}".format(gesture, self.spell))
 
 
-    def main():
 
+def main():
     # Create the manager and shop to search for wands
-        shop = Shop(wand_class=GestureWand)
-        wands = []
+    shop = Shop(wand_class=GestureWand)
+    wands = []
 
     try:
         # Scan for wands until it finds some
