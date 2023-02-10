@@ -67,7 +67,6 @@ class GestureWand(Wand):
             print("{}: {}".format(gesture, self.spell))
 
 
-
 def main():
     # Create the manager and shop to search for wands
     shop = Shop(wand_class=GestureWand)
@@ -95,7 +94,6 @@ def main():
                 write_report(NULL_CHAR*8)
                 wand.spell = None
             time.sleep(sleep)
-
 
 #    # Detect keyboard interrupt and disconnect wands, reset light
     except KeyboardInterrupt as e:
