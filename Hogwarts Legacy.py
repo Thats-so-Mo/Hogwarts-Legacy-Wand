@@ -5,12 +5,6 @@ import moosegesture
 import sys
 import time
 
-#NUNCHUCK SETUP
-
-import board
-import adafruit_nunchuk
-
-nc = adafruit_nunchuk.Nunchuk(board.I2C())
 
 NULL_CHAR = chr(0)
 
@@ -75,9 +69,6 @@ class GestureWand(Wand):
 
    def main():
 
-	if 
-	write_report(NULL_CHAR*2+chr(4)+NULL_CHAR*5)
-
     # Create the manager and shop to search for wands
     shop = Shop(wand_class=GestureWand)
     wands = []
@@ -94,13 +85,15 @@ class GestureWand(Wand):
             sleep = random.uniform(0.1, 0.2)
 #            transition = math.ceil(sleep * 10)
             if wand.spell == "lumos":
-                print('lumos spell detected turn on tree')
-                call_st(cmd_list = ['set', 'switch', 'Christmas Tree', 'on'])
-                #os.system('smartthings_cli set switch "Christmas Tree" on')
+                print('lumos spell detected')
+		write_report(NULL_CHAR*2+chr(30)+NULL_CHAR*5)
+		# Release keys
+		write_report(NULL_CHAR*8)
                 wand.spell = None
             if wand.spell == "nox":
-                print('nox spell detected turn off tree')
-                call_st(cmd_list = ['set', 'switch', 'Christmas Tree', 'off'])
+		write_report(NULL_CHAR*2+chr(30)+NULL_CHAR*5)
+		# Release keys
+		write_report(NULL_CHAR*8)
                 wand.spell = None
             time.sleep(sleep)
 
