@@ -21,7 +21,7 @@ class GestureWand(Wand):
         # We use them as tuples so we can use them as keys
         self.gestures = {
             ("U", "U"): "lumos",
-            ("D", "D"): "nox"
+            ("D", "D"): "nox",
             ("DL", "R", "DL"): "stupefy",
             ("DR", "R", "UR", "D"): "wingardium_leviosa",
             ("UL", "UR"): "reducio",
@@ -67,11 +67,11 @@ class GestureWand(Wand):
             print("{}: {}".format(gesture, self.spell))
 
 
-   def main():
+    def main():
 
     # Create the manager and shop to search for wands
-    shop = Shop(wand_class=GestureWand)
-    wands = []
+        shop = Shop(wand_class=GestureWand)
+        wands = []
 
     try:
         # Scan for wands until it finds some
@@ -86,14 +86,13 @@ class GestureWand(Wand):
 #            transition = math.ceil(sleep * 10)
             if wand.spell == "lumos":
                 print('lumos spell detected')
-		write_report(NULL_CHAR*2+chr(30)+NULL_CHAR*5)
-		# Release keys
-		write_report(NULL_CHAR*8)
+                write_report(NULL_CHAR*2+chr(30)+NULL_CHAR*5)
+                write_report(NULL_CHAR*8)
                 wand.spell = None
             if wand.spell == "nox":
-		write_report(NULL_CHAR*2+chr(30)+NULL_CHAR*5)
-		# Release keys
-		write_report(NULL_CHAR*8)
+                write_report(NULL_CHAR*2+chr(30)+NULL_CHAR*5)
+                # Release keys
+                write_report(NULL_CHAR*8)
                 wand.spell = None
             time.sleep(sleep)
 
