@@ -4,6 +4,7 @@ from kano_wand.kano_wand import Shop, Wand, PATTERN
 import moosegesture
 import sys
 import time
+import random
 
 
 NULL_CHAR = chr(0)
