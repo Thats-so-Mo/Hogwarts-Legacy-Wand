@@ -5,38 +5,36 @@ The basic idea behind this project is to convert the gestures/movements of the w
 
 This uses GammaGames' Kano_wand module/code (https://github.com/GammaGames/kano_wand) and I have a copy of their code/module included within my respiority as a 
 way to make it easier for people to clone. He has two respositories dedicated to the kano wand;https://github.com/GammaGames/kano_wand and https://github.com/GammaGames/kano-wand-demos (PLEASE CHECK THEM OUT).
-I also utilise this tutorial to setup and help me write the code, written by maspieljr, Here is his instructable that I have followed: https://www.instructables.com/SmartWand/ - turns out maspieljr got it from https://medium.com/@gammagames/control-a-phillips-hue-bulb-with-the-flick-of-a-wand-3a9af4826775
+I also utilise this tutorial to setup and aided in the creation of my code, Maspieljr's instructable is what I have followed to help set me up: https://www.instructables.com/SmartWand/ . The tutorial on the instructable is sourced from Jesse Linburg (aka GammaGames) himself: https://medium.com/@gammagames/control-a-phillips-hue-bulb-with-the-flick-of-a-wand-3a9af4826775 
 
+Down below is just a slightly modified copy of the tutorial found on his Instructable and from the original source material found on https://medium.com/@gammagames/control-a-phillips-hue-bulb-with-the-flick-of-a-wand-3a9af4826775.
 
-First step in SETUP is https://www.instructables.com/SmartWand/
+#### First step is to SETUP the RPI (https://www.instructables.com/SmartWand/) - I essentially set up my RPI headless (You can find tutorials online for this: https://www.tomshardware.com/how-to/set-up-raspberry-pi). I slightly modified the bottom to be more update to date.
 
 ~~~
-Step 1: Install RPI OS on Raspberry Pi
+Step 1: RPI OS installed on Raspberry Pi
 
-Once you've complete the install and have a Linux Command Prompt, it's good practice to run the following two commands to be sure everything is up to date.
+Once you've completed the install, Run the two bottom commands in terminal to ensure RPI is update to date.
 
-sudo apt-get update
+> sudo apt-get update
 
-sudo apt-get upgrade
-
-Type the following at the command line interface to launch the desktop UI.
-
-sudo startx
+> sudo apt-get upgrade
 
 
 Step 2: Install Python 3
 
-Python3 should already be installed with Raspian Stretch.
+Python3 should already be installed. But just incase run the command: 
+sudo apt install python3 
 
-Follow this guide created by GammaGames
+Step 3: Install modules for Kano Wand
 
-https://medium.com/@jesse007.gg/control-a-phillips...
+In terminal:
 
-I first had to change to a different directory before cloning the kano_wand repo, otherwise my python script couldn't find it. Probably could have updated some path references in some file somewhere, but I didn't dig into that.
+> cd /usr/local/lib/python3.9/dist-packages
 
-cd /usr/local/lib/python3.5/dist-packages
+then
 
-git clone  <a href="https://github.com/GammaGames/kano_wand.git" rel="nofollow"> https://github.com/GammaGames/kano_wand.git</a>
+> git clone https://github.com/GammaGames/kano_wand.git
 
 sudo pip3 install bluepy moosegesture
 
