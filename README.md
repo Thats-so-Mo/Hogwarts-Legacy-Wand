@@ -67,7 +67,7 @@ then
 
 #### Turn the Raspberry Pi Zero W into a USB HID Device
 
-Now you have Hogwarts Legacy Wand downloaded but its not ready to be used as you need to convert the RPI Zero W into a USB HID device; which can be easily done by following this [tutorial](https://randomnerdtutorials.com/raspberry-pi-zero-usb-keyboard-hid/). This is so that it makes it possible for the wand gestures to emulate keyboard button presses. Follow it all the way to Step 4, if you want you can do step 4 if you want to see if it functions as a USB HID Device. Remember, you followed the tutorial to step 4, YOU MUST CONNECT THE USB CABLE IN THE DATA USB PORT TO THE USB PORT On the PC WITH HOGWARTS LEGACY RUNNING ON IT.
+Now you have Hogwarts Legacy Wand downloaded but its not ready to be used as you need to convert the RPI Zero W into a USB HID device; which can be easily done by following this [tutorial](https://randomnerdtutorials.com/raspberry-pi-zero-usb-keyboard-hid/). This is so that it makes it possible for the wand gestures to emulate keyboard button presses. Follow it all the way to Step 4. If you want to ensure that it is functioning as USB HID device, complete step 4. Remember, you followed the tutorial to step 4, YOU MUST CONNECT THE USB CABLE IN THE DATA USB PORT TO THE USB PORT On the PC WITH HOGWARTS LEGACY RUNNING ON IT.
 
 Once done, launch terminal;
 
@@ -75,6 +75,6 @@ Once done, launch terminal;
 > chmod +x Hogwarts_Legacy.py
 > sudo ./Hogwarts_Legacy.py 
 
-sudo is needed due to bluepy being a bit of #$@##@... If its done all correctly, it should start showing "scanning" in terminal...
+sudo is needed due to bluepy being a bit of #$@##@ (permission issues)... If its done all correctly, it should start showing "scanning" in terminal...
 
 When casting a spell, hold down the button on the wand. Down below are wand gestures that can be currently found within Hogwarts_Legacy.py
