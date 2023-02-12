@@ -13,7 +13,7 @@ Special Thanks to the Harry Potter Nerds who filled out those wikias with wand m
 
 Down below is just a slightly modified copy of the tutorial found on his Instructable and from the [original source material](https://medium.com/@gammagames/control-a-phillips-hue-bulb-with-the-flick-of-a-wand-3a9af4826775)
 
-## First thing:  SETUP the RPI for Hogwarts Legacy Wand. 
+## First thing:  SETUP the RPI for Hogwarts Legacy Wand (Kano Wand). 
 
 I essentially set up my RPI to be headless (You can find [tutorials online](https://www.tomshardware.com/how-to/set-up-raspberry-pi) for this). Found below, is the slightly modified verison of the tutorial, slightly more update to date.
 
