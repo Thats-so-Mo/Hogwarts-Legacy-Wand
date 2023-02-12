@@ -72,7 +72,9 @@ Now you have Hogwarts Legacy Wand downloaded but its not ready to be used as you
 Once done, launch terminal;
 
 > cd Downloads\Hogwarts-Legacy-Wand
+
 > chmod +x Hogwarts_Legacy.py
+
 > sudo ./Hogwarts_Legacy.py 
 
 sudo is needed due to bluepy being a bit of #$@##@ (permission issues)... If its done all correctly, it should start showing "scanning" in terminal...
