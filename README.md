@@ -1,5 +1,4 @@
-# Hogwarts-Legacy-Wand
-## Use the Kano Wand for Hogwarts Legacy (PC Only)
+# Casting Spells in Hogwarts Legacy (PC Only) with the Kano Wand and a Raspberry Pi Zero W
 
 The basic idea behind this project is to convert the gestures/movements of the wand into keyboard button presses with the help of a Raspberry Pi Zero W. The wand connects to the RPI Zero W via Bluetooth which then RPI Zero W sends data to the PC with Hogwarts Legacy running on it via [USB (usb data port)](https://randomnerdtutorials.com/raspberry-pi-zero-usb-keyboard-hid/).
 
@@ -14,7 +13,7 @@ Special Thanks to the Harry Potter Nerds who filled out those wikias with wand m
 
 Down below is just a slightly modified copy of the tutorial found on his Instructable and from the [original source material](https://medium.com/@gammagames/control-a-phillips-hue-bulb-with-the-flick-of-a-wand-3a9af4826775)
 
-### First thing:  SETUP the RPI for Hogwarts Legacy Wand. 
+## First thing:  SETUP the RPI for Hogwarts Legacy Wand. 
 
 I essentially set up my RPI to be headless (You can find [tutorials online](https://www.tomshardware.com/how-to/set-up-raspberry-pi) for this). Found below, is the slightly modified verison of the tutorial, slightly more update to date.
 
@@ -65,7 +64,7 @@ then
 
 ~~~
 
-### Second thing: Turn the Raspberry Pi Zero W into a USB HID Device
+## Second thing: Turn the Raspberry Pi Zero W into a USB HID Device
 
 Now you have Hogwarts Legacy Wand downloaded but its not ready to be used as you need to convert the RPI Zero W into a USB HID device; which can be easily done by following this [tutorial](https://randomnerdtutorials.com/raspberry-pi-zero-usb-keyboard-hid/). This is so that it makes it possible for the wand gestures to emulate keyboard button presses. Follow it all the way to Step 4. If you want to ensure that it is functioning as USB HID device, complete step 4. Remember, you followed the tutorial to step 4, YOU MUST CONNECT THE USB CABLE IN THE DATA USB PORT TO THE USB PORT On the PC WITH HOGWARTS LEGACY RUNNING ON IT.
 
@@ -81,6 +80,6 @@ sudo is needed due to bluepy being a bit of #$@##@ (permission issues)... If its
 
 When casting a spell, hold down the button on the wand. Down below are wand gestures that can be currently found within Hogwarts Legacy Wand code.
 
-### Third Thing: Wand Gestures - Add/modifying/Removing Wand Gestures
+## Third Thing: Wand Gestures - Add/modifying/Removing Wand Gestures
 
 
