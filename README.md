@@ -1,7 +1,7 @@
 # Hogwarts-Legacy-Wand
 ### Use the Kano Wand for Hogwarts Legacy (PC Only)
 
-The basic idea behind this project is to convert the gestures/movements of the wand into keyboard button presses.
+The basic idea behind this project is to convert the gestures/movements of the wand into keyboard button presses with the help of a Raspberry Pi Zero.
 
 This uses GammaGames' Kano_wand module/code (https://github.com/GammaGames/kano_wand) and I have a copy of their code/module included within my respiority as a 
 way to make it easier for people to clone. He has two respositories dedicated to the kano wand;https://github.com/GammaGames/kano_wand and https://github.com/GammaGames/kano-wand-demos (PLEASE CHECK THEM OUT).
@@ -10,7 +10,7 @@ I also utilise this tutorial to setup and aided in the creation of my code, Masp
 
 Down below is just a slightly modified copy of the tutorial found on his Instructable and from the original source material found on https://medium.com/@gammagames/control-a-phillips-hue-bulb-with-the-flick-of-a-wand-3a9af4826775.
 
-#### First step is to SETUP the RPI (https://www.instructables.com/SmartWand/) - I essentially set up my RPI headless (You can find tutorials online for this: https://www.tomshardware.com/how-to/set-up-raspberry-pi). I slightly modified the bottom to be more update to date.
+First thing you got to do is to SETUP the RPI (https://www.instructables.com/SmartWand/) for Hogwarts_Legacy.py - I essentially set up my RPI to be headless (You can find tutorials online for this: https://www.tomshardware.com/how-to/set-up-raspberry-pi). I slightly modified the bottom to be more update to date.
 
 ~~~
 Step 1: RPI OS installed on Raspberry Pi
