@@ -62,6 +62,9 @@ then
 
 > git clone https://github.com/Thats-so-Mo/Hogwarts-Legacy-Wand.git
 
+> git clone https://github.com/GammaGames/kano_wand.git
+
+
 ~~~
 
 ## Second thing: Turn the Raspberry Pi Zero W into a USB HID Device
