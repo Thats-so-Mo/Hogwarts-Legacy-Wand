@@ -212,8 +212,8 @@ def main():
                 # Release keys
                 write_report(NULL_CHAR*8)  #press number 1
                 wand.spell = None
-            if wand.spell == "incendio":
-                print('incendio spell detected')
+            if wand.spell == "flipendo":
+                print('flipendo spell detected')
                 write_report(NULL_CHAR*2+chr(31)+NULL_CHAR*5) #press number 2
                 # Release keys
                 write_report(NULL_CHAR*8)
@@ -235,8 +235,8 @@ def main():
                 # Release keys
                 write_report(NULL_CHAR*8)  #press number 1
                 wand.spell = None
-            if wand.spell == "incendio":
-                print('incendio spell detected')
+            if wand.spell == "wingardium_leviosa":
+                print('wingardium_leviosa spell detected')
                 write_report(NULL_CHAR*2+chr(31)+NULL_CHAR*5) #press number 2
                 # Release keys
                 write_report(NULL_CHAR*8)
