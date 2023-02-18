@@ -208,19 +208,19 @@ def main():
                 write_report(NULL_CHAR*8)
                 wand.spell = None
             if wand.spell == "nox":
-                write_report(NULL_CHAR*2+chr(31)+NULL_CHAR*5)
+                write_report(NULL_CHAR*2+chr(30)+NULL_CHAR*5)
                 # Release keys
                 write_report(NULL_CHAR*8)  #press number 1
                 wand.spell = None
             if wand.spell == "incendio":
                 print('incendio spell detected')
-                write_report(NULL_CHAR*2+chr(32)+NULL_CHAR*5) #press number 2
+                write_report(NULL_CHAR*2+chr(31)+NULL_CHAR*5) #press number 2
                 # Release keys
                 write_report(NULL_CHAR*8)
                 wand.spell = None
             if wand.spell == "reparo":
                 print('reparo spell detected')
-                write_report(NULL_CHAR*2+chr(33)+NULL_CHAR*5) #press number 3
+                write_report(NULL_CHAR*2+chr(32)+NULL_CHAR*5) #press number 3
                 # Release keys
                 write_report(NULL_CHAR*8)
                 wand.spell = None
@@ -231,19 +231,19 @@ def main():
                 write_report(NULL_CHAR*8)
                 wand.spell = None
             if wand.spell == "nox":
-                write_report(NULL_CHAR*2+chr(31)+NULL_CHAR*5)
+                write_report(NULL_CHAR*2+chr(30)+NULL_CHAR*5)
                 # Release keys
                 write_report(NULL_CHAR*8)  #press number 1
                 wand.spell = None
             if wand.spell == "incendio":
                 print('incendio spell detected')
-                write_report(NULL_CHAR*2+chr(32)+NULL_CHAR*5) #press number 2
+                write_report(NULL_CHAR*2+chr(31)+NULL_CHAR*5) #press number 2
                 # Release keys
                 write_report(NULL_CHAR*8)
                 wand.spell = None
             if wand.spell == "reparo":
                 print('reparo spell detected')
-                write_report(NULL_CHAR*2+chr(33)+NULL_CHAR*5) #press number 3
+                write_report(NULL_CHAR*2+chr(32)+NULL_CHAR*5) #press number 3
                 # Release keys
                 write_report(NULL_CHAR*8)
                 wand.spell = None
