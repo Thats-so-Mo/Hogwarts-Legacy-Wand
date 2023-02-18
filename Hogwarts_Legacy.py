@@ -224,6 +224,12 @@ def main():
                 # Release keys
                 write_report(NULL_CHAR*8)
                 wand.spell = None
+            if wand.spell == "wingardium_leviosa":
+                print('wingardium_leviosa spell detected')
+                write_report(NULL_CHAR*2+chr(33)+NULL_CHAR*5) #press number 3
+                # Release keys
+                write_report(NULL_CHAR*8)
+                wand.spell = None                
             #LEVEL 4 -Fourth ROW OF SPELLS
             if wand.spell == "lumos":
                 print('lumos spell detected')
@@ -247,6 +253,12 @@ def main():
                 # Release keys
                 write_report(NULL_CHAR*8)
                 wand.spell = None
+            if wand.spell == "levioso":
+                print('levioso spell detected')
+                write_report(NULL_CHAR*2+chr(33)+NULL_CHAR*5) #press number 4
+                # Release keys
+                write_report(NULL_CHAR*8)
+                wand.spell = None                
             time.sleep(sleep)
 
 #    # Detect keyboard interrupt and disconnect wands,
