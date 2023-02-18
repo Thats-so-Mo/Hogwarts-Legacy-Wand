@@ -197,7 +197,7 @@ def main():
                 wand.spell = None
             if wand.spell == "accio":
                 print('accio spell detected')
-                write_report(NULL_CHAR*2+chr(33)+NULL_CHAR*5) #press number 3
+                write_report(NULL_CHAR*2+chr(33)+NULL_CHAR*5) #press number 4
                 # Release keys
                 write_report(NULL_CHAR*8)
                 wand.spell = None
