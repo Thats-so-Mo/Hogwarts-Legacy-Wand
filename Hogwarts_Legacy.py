@@ -125,7 +125,7 @@ def main():
                 wand.spell = None
             if wand.spell == "changespells":
                 print('changle spells detected')
-                write_report(NULL_CHAR*2+chr(54)+NULL_CHAR*5) #press letter q
+                write_report(NULL_CHAR*2+chr(54)+NULL_CHAR*5) #press letter ,
                 write_report(NULL_CHAR*8)
                 wand.spell = None
             if wand.spell == "ancient":
