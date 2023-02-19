@@ -85,4 +85,33 @@ When casting a spell, hold down the button on the wand. Down below are wand gest
 
 ## Third Thing: Wand Gestures - Add/modifying/Removing Wand Gestures
 
+In the "class GestureWand(Wand)" sectopm, under the self gestures part. This is where you put in the gestures/spells you want to be able to perform. Some have been pulled by GammaGames and put in such as lumos where as I put in the accio, reparo, revelio and etc by using existing information available on their wand movements looking around online, on certain wikis or even on the kano wand spell sheet however for ancient spell and ancient throw spell, basic spell, etc - i just made it up. 
+
+For example, ancient throw spell is just me tracing the letter Z in the air with the wand - Z being the letter to press for ancient spell in Hogwarts Legacy by default.
+
+But if you want to insert accurate gestures and wand movements - use GammaGames gesture script, trace the spell with the wand and it displays the corresponding movement and then just copy and paste it into my script and give it a name. There are 8 different directions that the wand can detect; Up, Down, Left, Right, Up left, Up Right, Down Left, Down Right.. Flick the wand up - you get a U… you get the gist. Do a bunch of wand movements, it translates those movements in those 8 directions and then spits out the movements you did with the wand. Pretty simple - works great and surprisingly accurate. If you want to add your own spell, just copy the format of another spell or rewrite an existing one (e.g. reparo, Idk why i have so many) and then bobs your uncle.
+
+Now in the "def main():" section
+
+We get a bunch of "ifwand spell" commands.
+
+The first you see are the default spells such as Protego (which is the letter 'Q'), revelio (letter 'R') and basic spell being the letter 'B'. With basic spell, I did set that up in Hogwarts Legacy to be the letter 'B'.
+
+Using protego as an example,
+
+When the script detects the protego spell casted by the wand, it will first print [protego spell detected] and then send the corresponding key press to the pc which in this case is the letter 'q' (write_report(NULL_CHAR*2+chr(20)+NULL_CHAR*5)).
+
+Then it releases the “keyboard” (write_report(NULL_CHAR*8)) - without this line. It will pretty much spam the letter ''
+
+write_report(NULL_CHAR*2+chr(20)+NULL_CHAR*5) 
+The "20" value is the decimal value of 'Q'. if your protego is actually the letter M, you use the Univerisal Serial bus hid usage table (https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf), scroll down to Table 12 of the document to find its corresponding value and replace number 20 with the number 16 (From Table 12)
+- Thats it - no other changes are needed
+
+Now, if you want to change a spell, lets say in row 1, spell number 1, all you need to do is change expellarimus to another spell such as wingardium_levisa and thats pretty much it….
+
+Now I know this method, this code, isnt perfect. When the spells have been chosen, with each number and row associated for each spell. This makes it so that there are 4 different wand gestures, four spells that can trigger a button press
+
+For example with number 2, 
+
+There are four spells that can trigger number 2; incendio, disillusionment, flipendo and windgardium leviosa. If your in the wrong row such as the first row but you do the wand gesture for windgardium leviosa, it will trigger incendio. So its up to the player to remain vigilant. I have so far set myself up that the first row are the spells that I want to use during battle while the other rows could be used for different utilities such as conjuring.
 
