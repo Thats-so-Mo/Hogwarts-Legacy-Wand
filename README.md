@@ -103,7 +103,8 @@ When the script detects the protego spell casted by the wand, it will first prin
 
 Then it releases the “keyboard” (write_report(NULL_CHAR*8)) - without this line. It will pretty much spam the letter ''
 
-write_report(NULL_CHAR*2+chr(20)+NULL_CHAR*5) 
+"write_report(NULL_CHAR*2+chr(20)+NULL_CHAR*5)" 
+
 The "20" value is the decimal value of 'Q'. if your protego is actually the letter M, you use the Univerisal Serial bus hid usage table (https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf), scroll down to Table 12 of the document to find its corresponding value and replace number 20 with the number 16 (From Table 12)
 - Thats it - no other changes are needed
 
