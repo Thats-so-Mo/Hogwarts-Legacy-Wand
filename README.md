@@ -2,6 +2,9 @@
 
 The basic idea behind this project is to convert the gestures/movements of the wand into keyboard button presses with the help of a Raspberry Pi Zero W. The wand connects to the RPI Zero W via Bluetooth which then RPI Zero W sends data to the PC with Hogwarts Legacy running on it via [USB (usb data port)](https://randomnerdtutorials.com/raspberry-pi-zero-usb-keyboard-hid/).
 
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/V1tuf1zIyzc/0.jpg)](https://youtu.be/V1tuf1zIyzc)
+
 This uses GammaGames' Kano_wand module/code (https://github.com/GammaGames/kano_wand) and I have a copy of their code/module included within my repository as a 
 way to make it easier for people to clone. He has two repositories dedicated to the kano wand;https://github.com/GammaGames/kano_wand and https://github.com/GammaGames/kano-wand-demos (PLEASE CHECK THEM OUT). Without him, I would not have been possible to actually do this. Special Thanks to him, Jesse Linburg.
 
