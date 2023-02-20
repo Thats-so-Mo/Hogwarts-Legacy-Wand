@@ -2,7 +2,7 @@
 
 The basic idea behind this project is to convert the gestures/movements of the wand into keyboard button presses with the help of a Raspberry Pi Zero W. The wand connects to the RPI Zero W via Bluetooth which then RPI Zero W sends data to the PC with Hogwarts Legacy running on it via [USB (usb data port)](https://randomnerdtutorials.com/raspberry-pi-zero-usb-keyboard-hid/).
 
-##Check out the video for a demonstration and setup
+## Check out the video for a setup process and demonstration
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/V1tuf1zIyzc/0.jpg)](https://youtu.be/V1tuf1zIyzc)
 
