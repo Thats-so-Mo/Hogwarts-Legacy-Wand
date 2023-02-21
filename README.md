@@ -21,6 +21,11 @@ Down below is just a slightly modified copy of the tutorial found on his Instruc
 ## Gestures
 There are the gestures for V1 and V2, both verisons are slightly different but it has the same meaning.
 
+Some gestures can be found from the Kano Wand Motions sheet:
+
+[![IMAGE ALT TEXT HERE](https://www.gammagames.net/assets/img/posts/kano-wand/wand_motions.jpeg)](https://www.gammagames.net/assets/img/posts/kano-wand/wand_motions.jpeg)
+
+
 KEY: 
 
 U = UP
