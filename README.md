@@ -17,6 +17,96 @@ Special Thanks to the Harry Potter Nerds who filled out those wikias with wand m
 
 Down below is just a slightly modified copy of the tutorial found on his Instructable and from the [original source material](https://medium.com/@gammagames/control-a-phillips-hue-bulb-with-the-flick-of-a-wand-3a9af4826775)
 
+
+## Gestures
+There are the gestures for V1 and V2, both verisons are slightly different but it has the same meaning.
+
+KEY: 
+
+U = UP
+
+D = Down
+
+L = Left
+
+R = Right
+
+UL = UP LEFT
+
+UR = UP RIGHT
+
+DL = DOWN LEFT
+
+DR = DOWN RIGHT
+
+
+# V1
+
+            ("U", "U"): "lumos"
+            ("D", "D"): "nox"
+            ("DL", "R", "DL"): "stupefy"
+            ("DR", "R", "UR", "D"): "wingardium_leviosa"
+            ("DR", "R", "U"): "levioso"
+            ("UL", "UR"): "reducio"
+            ("DR", "U", "UR", "DR", "UR"): "flipendo"
+            ("R", "D"): "expelliarmus"
+            ("UR", "DR", "L"): "incendio"
+            ("U", "D", "DR", "R", "L"): "locomotor"
+            ("DR", "DL"): "engorgio"
+            ("UR", "R", "DR"): "aguamenti"
+            ("UR", "R", "DR", "UR", "R", "DR"): "avis"
+            ("D", "R", "U"): "reducto"
+            ("DR", "R", "UR", "UL", "UR", "R", "DR"): "reparo"
+            ("DR", "R", "UR", "U", "UL"): "reparo"
+            ("DR", "R", "UR", "UL", "L", "R"): "reparo"
+            ("DR", "R", "UR", "UL", "UR", "R"): "reparo"
+            ("DR", "R", "UR", "UL", "L", "UL", "R"): "reparo"
+            ("DR", "R", "UR", "UL", "R", "DR"): "reparo"
+            ("DR", "R", "UL", "L", "R", "D"): "reparo"
+            ("U", "DR", "DL", "DR"): "revelio"
+            ("DR", "UR"): "protego"
+            ("UR", "R", "DR"): "accio"
+            ("DR", "U", "DL"): "ancient"
+            ("R", "L"): "basic"
+            ("L", "R"): "basic"
+            ("U", "DL", "U"): "changespells"
+            ("UR", "R", "DR", "DL", "L", "UL", "UR", "R", "DR", "DL"): "disillusionment"
+            ("R", "DL", "R"): "ancient_throw"
+
+# V2
+
+            ("U", "U"): "lumos"
+            ("D", "D"): "nox"
+            ("DL", "R", "DL"): "stupefy"
+            ("DR", "R", "UR", "D"): "wingardium_leviosa"
+            ("DR", "R", "U"): "levioso"
+            ("UL", "UR"): "reducio"
+            ("DR", "U", "UR", "DR", "UR"): "flipendo"
+            ("R", "D"): "expelliarmus"
+            ("UR", "DR", "L"): "incendio"
+            ("U", "D", "DR", "R", "L"): "locomotor"
+            ("DR", "DL"): "engorgio"
+            ("UR", "R", "DR"): "aguamenti"
+            ("UR", "R", "DR", "UR", "R", "DR"): "avis"
+            ("D", "R", "U"): "reducto"
+            ("DL", "UR", "DL"): "avada_kedavra"
+            ("DR", "R", "UR", "U", "UL"): "reparo"
+            ("UR", "R", "DR", "UR", "R", "DR"): "conjuring_spell"
+            ("DR", "R", "UR"): "depulso"
+            ("UR", "DR", "UR", "UR", "D", "DR", "DL", "L"): "glacius"
+            ("U", "UL", "L", "DL", "D", "DR", "R"): "descendo"
+            ("DR", "R", "UL", "L", "R", "D"): "reparo"
+            ("UR", "L", "DR", "L"): "crucio"         
+            ("U", "DR", "DL", "DR"): "revelio"
+            ("DR", "UR"): "protego"
+            ("UR", "R", "DR"): "accio"
+            ("DR", "U", "DL"): "ancient"
+            ("R", "L"): "basic"
+            ("L", "R"): "basic"
+            ("U", "DL", "U"): "changespells",
+            ("UR", "R", "DR", "DL", "L", "UL", "UR", "R", "DR", "DL"): "disillusionment"
+            ("R", "DL", "R"): "ancient_throw"
+
 ## First thing:  SETUP the RPI for Hogwarts Legacy Wand (Kano Wand). 
 
 I essentially set up my RPI to be headless (You can find [tutorials online](https://www.tomshardware.com/how-to/set-up-raspberry-pi) for this). Found below, is the slightly modified verison of the tutorial, slightly more update to date.
