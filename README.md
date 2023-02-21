@@ -130,18 +130,28 @@ Reddit user (thistallasian) suggested this bit to improve spell casting:
 Essentially, assign F1-F4 to each row which then whenever we cast a spell, it sends the correct F* and then casts the correct spell.
 BEFORE:
             if wand.spell == "expelliarmus":
+            
                 print('expelliarmus spell detected')
+                
                 write_report(NULL_CHAR*2+chr(30)+NULL_CHAR*5) #press number 1
+                
                 write_report(NULL_CHAR*8)
+                
                 wand.spell = None
                 
 AFTER:
             if wand.spell == "expelliarmus":
+            
                 print('expelliarmus spell detected')
+                
                 write_report(NULL_CHAR*2+chr(58)+NULL_CHAR*5) #changes to correct row
+                
                 write_report(NULL_CHAR*8)                
+                
                 write_report(NULL_CHAR*2+chr(30)+NULL_CHAR*5) #press number 1
+                
                 write_report(NULL_CHAR*8)
+                
                 wand.spell = None
                 
 Thanks thistallasian - great idea
