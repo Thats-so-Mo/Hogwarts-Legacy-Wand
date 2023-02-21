@@ -1,4 +1,4 @@
-# Casting Spells in Hogwarts Legacy (PC Only) with the Kano Wand and a Raspberry Pi Zero W
+# Casting Spells in Hogwarts Legacy (PC Only) with the Kano Wand and a Raspberry Pi Zero W (V1)
 
 The basic idea behind this project is to convert the gestures/movements of the wand into keyboard button presses with the help of a Raspberry Pi Zero W. The wand connects to the RPI Zero W via Bluetooth which then RPI Zero W sends data to the PC with Hogwarts Legacy running on it via [USB (usb data port)](https://randomnerdtutorials.com/raspberry-pi-zero-usb-keyboard-hid/).
 
@@ -121,7 +121,7 @@ For example with number 2,
 
 There are four spells that can trigger number 2; incendio, disillusionment, flipendo and windgardium leviosa. If your in the wrong row such as the first row but you do the wand gesture for windgardium leviosa, it will trigger incendio. So its up to the player to remain vigilant. I have so far set myself up that the first row are the spells that I want to use during battle while the other rows could be used for different utilities such as conjuring.
 
-## UPDATE:
+## UPDATE V2:
 
 Reddit user (thistallasian) suggested this bit to improve spell casting:
 
@@ -159,3 +159,18 @@ AFTER:
                 wand.spell = None
                 
 Thanks thistallasian - great idea
+
+## Hogwarts_Legacyv2.py
+
+This is the updated code where 16 unique spells (no doubling in spells) can be casted at any given time. Basically you need to assign a F1-F4 for each spell row in Hogwarts Legacy now with this code. for example my first row would be F1. The way that it works is that when you cast a spell, it will automatically cast the correct corresponding spell. 
+
+For example,
+If I casted lumos, the raspberry pi will send out the F2 key press (as F2 is assigned to row 2) and then the number 1 will be sent to the game, initating the lumos spell.
+
+then afterwards, I can then cast expelliarmus, the code will then switch the row to F1, send out the number 1 button press and then cast the expellarimus spell.
+
+THIS IS UNTESTED! Please note. The spells used and their gestures may not be 100% accurate. 
+
+Thanks to thistallasian from Reddit for this suggestion.                
+                
+
