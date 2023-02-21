@@ -19,7 +19,7 @@ Down below is just a slightly modified copy of the tutorial found on his Instruc
 
 
 ## Gestures
-There are the gestures for V1 and V2, both verisons are slightly different but it has the same meaning.
+There are the gestures for V1 and V2, both verisons are slightly different but it has the same meaning. There are some missing gestures as I didn't capture all of them but if you are interested in adding your own - have a scroll look through, gesture.py script is your friend.
 
 Some gestures can be found from the Kano Wand Motions sheet:
 
