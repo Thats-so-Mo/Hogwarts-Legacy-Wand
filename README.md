@@ -114,9 +114,34 @@ The "20" value is the decimal value of 'Q'. if your protego is actually the lett
 
 Now, if you want to change a spell, lets say in row 1, spell number 1, all you need to do is change expellarimus to another spell such as wingardium_levisa and thats pretty much it….
 
-Now I know this method, this code, isnt perfect. When the spells have been chosen, with each number and row associated for each spell. This makes it so that there are 4 different wand gestures, four spells that can trigger a button press
+Now I know this method, this code, isnt perfect. When the spells have been chosen, with each number and row associated for each spell. This makes it so that there are 4 different wand gestures, four spells that can trigger a button press.
+
 
 For example with number 2, 
 
 There are four spells that can trigger number 2; incendio, disillusionment, flipendo and windgardium leviosa. If your in the wrong row such as the first row but you do the wand gesture for windgardium leviosa, it will trigger incendio. So its up to the player to remain vigilant. I have so far set myself up that the first row are the spells that I want to use during battle while the other rows could be used for different utilities such as conjuring.
 
+## UPDATE:
+
+Reddit user (thistallasian) suggested this bit to improve spell casting:
+
+"Great work! IIRC you can use F1-F4 to change your spell rows, which means you should be able to cast all 16 assigned spells without flipping rows using ",". For example, you could have "expelliarmus" write F1 (58) followed by 1 (30) while "lumos" writes F2 (59) followed by 1 (30)."
+
+Essentially, assign F1-F4 to each row which then whenever we cast a spell, it sends the correct F* and then casts the correct spell.
+BEFORE:
+            if wand.spell == "expelliarmus":
+                print('expelliarmus spell detected')
+                write_report(NULL_CHAR*2+chr(30)+NULL_CHAR*5) #press number 1
+                write_report(NULL_CHAR*8)
+                wand.spell = None
+                
+AFTER:
+            if wand.spell == "expelliarmus":
+                print('expelliarmus spell detected')
+                write_report(NULL_CHAR*2+chr(58)+NULL_CHAR*5) #changes to correct row
+                write_report(NULL_CHAR*8)                
+                write_report(NULL_CHAR*2+chr(30)+NULL_CHAR*5) #press number 1
+                write_report(NULL_CHAR*8)
+                wand.spell = None
+                
+Thanks thistallasian - great idea
