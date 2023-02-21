@@ -148,7 +148,7 @@ AFTER:
             
                 print('expelliarmus spell detected')
                 
-                write_report(NULL_CHAR*2+chr(58)+NULL_CHAR*5) #changes to correct row
+                write_report(NULL_CHAR*2+chr(58)+NULL_CHAR*5) #changes to correct row (F1)
                 
                 write_report(NULL_CHAR*8)                
                 
